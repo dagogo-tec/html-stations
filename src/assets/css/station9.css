@@ -1,0 +1,24 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 320px) {
+  /*　画面サイズが320pxからはここを読み込む　*/
+  .card__title {
+    font-size: 10x;
+  }
+  .card__description {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /*　画面サイズが768pxからはここを読み込む　*/
+  .card__description,
+  .card__title {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /*　画面サイズが1200pxからはここを読み込む　*/
+}
